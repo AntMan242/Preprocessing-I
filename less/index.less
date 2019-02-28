@@ -50,12 +50,105 @@ table {
 
 /* Set every element's box-sizing to border-box */
 
+// Variables
+@accent-color: purple;
+@font-stack: Book Antiqua, sans-serif;
+
 * {
     box-sizing: border-box;
 }
 
 html, body {
 	height: 100%;
+	margin: 100px;
+	margin-top: 10px;
+}
+
+h1 {
+	font-size: 40px;
+	font-weight: bold;
+	color: @accent-color;
+}
+
+.intro {
+	text-align: center;
+	line-height: 50px;
+	font-size: 35px;
+	font-weight: bold;
+	margin-bottom: 20px;
+	// color: purple;
+	color: @accent-color;
 
 }
 
+nav {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 20px;
+}
+
+a {
+	display: inline-block;
+	justify-content: center;
+	text-decoration: none;
+	justify-content: end;
+	// color: purple;
+	color: @accent-color;
+	font-weight: bold;
+	margin: 40px;
+	
+}
+
+img {
+	margin-left: 50px;
+}
+
+ul {
+	list-style-type: disc;
+}
+
+.skills {
+	text-align: center;
+	line-height: 50px;
+	font-size: 35px;
+	font-weight: bold;
+	margin-bottom: 20px;
+	margin-top: 20px;
+	// color: purple;
+	color: @accent-color;
+}
+
+.midContent {
+	border-bottom: 2px solid black;
+	margin-bottom: 20px;
+	padding: 20px;
+}
+
+.work {
+	text-align: center;
+	line-height: 50px; 
+	font-size: 35px;
+	font-weight: bold;
+	margin-bottom: 20px;
+	// color: purple;
+	color: @accent-color;
+
+}
+
+.workH {
+	font-style: italic;
+	color: red;
+	font-weight: bold;
+	font-size: 20px;
+}
+
+.wrk {
+	margin-bottom: 20px;
+}
+
+p {
+	line-height: 1.35;
+	font-size: 13px;
+	font-family: @font-stack;
+
+}
